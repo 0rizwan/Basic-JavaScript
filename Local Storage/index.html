@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Local Storage</title>
+</head>
+<body>
+    <h1>Local Storage</h1>
+
+    <script>
+        let key = prompt("Enter the key");
+        let value = prompt("Enter the value");
+
+        // setItem- It sets the key and value to the local storage.
+        localStorage.setItem(key, value);
+
+        // getItem(keyname) - It gets the items from local storage. 
+        console.log(localStorage.getItem("Name"));
+
+        // removeItem(keyname) - It removes the item.
+        localStorage.removeItem("age");
+
+        console.log(localStorage.key(2));
+    </script>
+</body>
+</html>

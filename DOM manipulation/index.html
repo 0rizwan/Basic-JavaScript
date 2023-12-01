@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>DOM Manipulation</title>
+    <script src="./dom.js" defer></script>
+    <link href="#" />
+</head>
+<style>
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .height {
+        height: 100px;
+    }
+
+    .width {
+        width: 100px;
+    }
+
+    .center {
+        text-align: center;
+    }
+
+    .font {
+        font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    }
+
+    .border {
+        border: 2px solid black;
+    }
+
+    .bg-yellow {
+        background-color: yellow;
+    }
+
+    .bg-green {
+        background-color: green;
+    }
+    .bg-black {
+        background-color: black;
+    }
+    .bg-blue {
+        background-color: blue;
+    }
+    .bg-grey {
+        background-color: grey;
+    }
+</style>
+
+<body>
+    <div class="main">
+        <h1 id="heading">This is heading</h1>
+        <nav id="navbar" class="nav" style="background-color: beige;">
+            <ul>
+                <li><a>HOME</a></li>
+                <li><a>ABOUT US</a></li>
+                <li><a>CONTACT</a></li>
+            </ul>
+        </nav>
+        <div class="container">
+            <p id="para">This is paragraph.</p>
+        </div>
+        <div class="container" style="height: 10rem; width: 10rem; background-color: blue">This is Div Two
+        </div>
+        <br>
+        <div id="divThree" class="height width bg-yellow border">
+            This is Div Three
+        </div>
+        <br>
+        <div id="parentFF">
+            <div id="divFour">This is Div Four</div>
+            <div id="divFive" class="center height bg-blue">This is Div Five</div>
+            <div id="divSix" class="center height bg-grey">This is Div Six</div>
+        </div>
+        <div id="divSeven" class="height"></div>
+        <div id="divEight">Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro libero cum veritatis dolorum maxime autem non corrupti tempora alias magni.</div>
+        <ul id="list" class="bg-grey">
+            <li>Apple</li>
+            <li>Banana</li>
+            <li>Chikoo</li>
+            <li>Grapes</li>
+        </ul>
+        <h1 id="one">
+            <p id="two"> This is a text </p>
+        </h1>
+
+    </div>
+</body>
+
+</html>

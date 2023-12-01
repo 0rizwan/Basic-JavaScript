@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Events Listeners in Javascript</title>
+    <script src="./event.js" defer></script>
+    <style>
+        #container{
+            
+            width: 1000px;
+            display: flex;
+            justify-content: center;
+            /* align-items: center; */
+            background-color: green;
+        }
+        .screen {
+            background-color: bisque;
+            height: 30px;
+            width: 180px;
+            border: 2px solid black;
+        }
+        .div-input{
+            display: flex;
+            flex-direction: column;
+        }
+    </style>
+</head>
+<body>
+    <form id="form">
+        <div id="container">
+            <div class="div-input">
+                <label>Name</label> 
+                <input type="text" id="name" placeholder="Input Event" required>
+                <input class="screen" readonly>
+            </div>
+            <div class="div-input">
+                <label>Email</label> 
+                <input type="email" id="email" oninvalid="alert('fill the correct email')">
+                <input class="screen" readonly>
+            </div>
+            <div class="div-input">
+                <label>City</label> 
+                <input type="text" id="city" placeholder="Change Event">
+                <input class="screen" readonly>
+            </div>
+            <div class="div-input">
+                <label>Job</label> 
+                <input type="text" id="job" placeholder="Select Event">
+                <input class="screen" readonly>
+            </div>
+            <div class="div-input">
+                <label>Country</label>
+                <select id="country">
+                    <option>INDIA</option>
+                    <option>FRANCE</option>
+                    <option>SPAIN</option>
+                    <option>BRAZIL</option>
+                </select>
+                <input class="screen" readonly>
+            </div>
+        </div>
+        <input type="submit">
+    </form>
+</body>
+</html>
