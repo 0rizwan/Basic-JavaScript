@@ -84,7 +84,7 @@ To explore the examples provided in this repository, follow these steps:
 1. **Clone the Repository**: 
    Clone this repository to your local machine to access the code and experiment with it:
    ```bash
-   git clone [your-repo-url]
+   git clone https://github.com/0rizwan/Basic-JavaScript.git
 
 2. Navigate Through the Folders: Each topic is organized in its own, containing example files and descriptions.
 
